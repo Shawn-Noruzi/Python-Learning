@@ -1,0 +1,61 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{30ee7f75-53f1-4308-b338-f34e959a1a8b}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>AttackRPG\attack.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonApplication1</Name>
+    <RootNamespace>PythonApplication1</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.6</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AttackRPG\attack.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttackRPG\classes\enemy.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttackRPG\classes\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Calculator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttackRPG\RPG.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PepGuidellines.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Regex.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AttackRPG\" />
+    <Folder Include="AttackRPG\classes\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
