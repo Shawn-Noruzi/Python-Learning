@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Learning",
+    "\\Learning\\JSON"
   ],
+  "SelectedNode": "\\Learning\\JSON\\ages.json",
   "PreviewInSolutionExplorer": false
 }
