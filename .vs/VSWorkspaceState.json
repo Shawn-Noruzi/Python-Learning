@@ -2,7 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Learning",
-    "\\Learning\\HTTPRequest"
+    "\\Learning\\HTTPRequest",
+    "\\Learning\\PyMongo"
   ],
+  "SelectedNode": "\\Learning\\PyMongo\\Pymongo.py",
   "PreviewInSolutionExplorer": false
 }
